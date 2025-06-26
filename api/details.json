@@ -1,18 +1,74 @@
 [
-    {
-        "title": "Title 1",
-        "desc": "This is the description for title 1"
-    },
-    {
-        "title": "Title 2",
-        "desc": "This is the description for title 2"
-    },
-    {
-        "title": "Title 3",
-        "desc": "This is the description for title 3"
-    },
-    {
-        "title": "Title 4",
-        "desc": "This ois the description for title 4"
-    }
+  {
+    "title": "Inception",
+    "desc": "A skilled thief enters dreams to steal secrets and plant ideas.",
+    "rating": 8.8,
+    "casts": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"]
+  },
+  {
+    "title": "The Dark Knight",
+    "desc": "Batman faces off against the Joker in a battle for Gotham's soul.",
+    "rating": 9.0,
+    "casts": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"]
+  },
+  {
+    "title": "Interstellar",
+    "desc": "A team of explorers travels through a wormhole in space.",
+    "rating": 8.6,
+    "casts": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"]
+  },
+  {
+    "title": "Parasite",
+    "desc": "A poor family infiltrates a wealthy household with unintended consequences.",
+    "rating": 8.5,
+    "casts": ["Song Kang-ho", "Lee Sun-kyun", "Cho Yeo-jeong"]
+  },
+  {
+    "title": "The Matrix",
+    "desc": "A hacker learns about the true nature of his reality.",
+    "rating": 8.7,
+    "casts": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"]
+  },
+  {
+    "title": "Gladiator",
+    "desc": "A Roman general seeks revenge after being betrayed.",
+    "rating": 8.5,
+    "casts": ["Russell Crowe", "Joaquin Phoenix", "Connie Nielsen"]
+  },
+  {
+    "title": "The Shawshank Redemption",
+    "desc": "Two imprisoned men bond over a number of years.",
+    "rating": 9.3,
+    "casts": ["Tim Robbins", "Morgan Freeman", "Bob Gunton"]
+  },
+  {
+    "title": "Fight Club",
+    "desc": "An insomniac and a soap maker form an underground club.",
+    "rating": 8.8,
+    "casts": ["Brad Pitt", "Edward Norton", "Helena Bonham Carter"]
+  },
+  {
+    "title": "Forrest Gump",
+    "desc": "A simple man lives an extraordinary life through history.",
+    "rating": 8.8,
+    "casts": ["Tom Hanks", "Robin Wright", "Gary Sinise"]
+  },
+  {
+    "title": "The Godfather",
+    "desc": "The aging patriarch of an organized crime dynasty transfers control to his son.",
+    "rating": 9.2,
+    "casts": ["Marlon Brando", "Al Pacino", "James Caan"]
+  },
+  {
+    "title": "Pulp Fiction",
+    "desc": "Stories of crime in Los Angeles interweave with dark humor.",
+    "rating": 8.9,
+    "casts": ["John Travolta", "Samuel L. Jackson", "Uma Thurman"]
+  },
+  {
+    "title": "Avengers: Endgame",
+    "desc": "The Avengers unite to reverse the damage caused by Thanos.",
+    "rating": 8.4,
+    "casts": ["Robert Downey Jr.", "Chris Evans", "Scarlett Johansson"]
+  }
 ]
