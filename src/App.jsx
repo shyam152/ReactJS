@@ -5,6 +5,7 @@ import details from '../api/details.json'
 import { Register } from './component/form/Register'
 import { RegisterEff } from './component/form/RegisterEff'
 import UseEffect from './component/UseEffect/UseEffect'
+import Jokes from './component/data/Jokes'
 const App = () => {
     //Javascript code can be added here if needed
     // For example, you can define styles or state variables  
@@ -31,7 +32,8 @@ const App = () => {
 
             {/* <Register /> */}
             {/* <RegisterEff/> */}
-            <UseEffect/>
+            {/* <UseEffect/> */}
+            <Jokes/>
         </div>
     )
 }
