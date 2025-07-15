@@ -1,24 +1,31 @@
 import React, { useEffect, useState } from 'react'
+import Loader from './Loader'
 
 const PokemonApi = () => {
   const [data, setData] = useState([])
   const [search, setSearch] = useState("")
-  const[loader,setLoader] = useState(true)
+  const [loader, setLoader] = useState(true)
   const ApiUrl = "https://pokeapi.co/api/v2/pokemon"
 
   const fetchPoke = async () => {
-    let res = await fetch(ApiUrl)
-    let data = await res.json()
+    try {
+      let res = await fetch(ApiUrl)
+      let data = await res.json()
 
-    const urlData = data.results.map(async (curr) => {
-      let res = await fetch(curr.url)
-      let data = await res.json();
-      return data
-    })
+      const urlData = data.results.map(async (curr) => {
+        let res = await fetch(curr.url)
+        let data = await res.json();
+        return data
+      })
 
-    const response = await Promise.all(urlData)
-    setData(response)
-    setLoader(false)
+      const response = await Promise.all(urlData)
+      setData(response)
+      setLoader(false)
+    } catch (error) {
+      console.log(error);
+
+      
+    }
   }
 
   const handleSearch = (e) => {
@@ -32,13 +39,13 @@ const PokemonApi = () => {
   useEffect(() => {
     setTimeout(() => {
       fetchPoke()
-    },3000)
+    }, 3000)
   }, [])
 
-  if(loader){
+  if (loader) {
     return (
       <>
-      <h1>Loading....</h1>
+        <Loader />
       </>
     )
   }
