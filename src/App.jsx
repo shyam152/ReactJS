@@ -7,6 +7,9 @@ import { RegisterEff } from './component/form/RegisterEff'
 import UseEffect from './component/UseEffect/UseEffect'
 import Jokes from './component/data/Jokes'
 import PokemonApi from './component/data/PokemonApi'
+import UseRef from './component/UseRef/UseRef'
+import { DataProvider } from './component/ContextAPi/Store'
+import UseContext from './component/ContextAPi/UseContext'
 const App = () => {
     //Javascript code can be added here if needed
     // For example, you can define styles or state variables  
@@ -35,7 +38,12 @@ const App = () => {
             {/* <RegisterEff/> */}
             {/* <UseEffect/> */}
             {/* <Jokes/> */}
-            <PokemonApi/>
+            {/* <PokemonApi/> */}
+            {/* <UseRef/> */}
+
+            <DataProvider>
+                <UseContext/>
+            </DataProvider>
         </div>
     )
 }

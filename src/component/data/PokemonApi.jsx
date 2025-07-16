@@ -22,6 +22,7 @@ const PokemonApi = () => {
       setData(response)
       setLoader(false)
     } catch (error) {
+      setLoader(false)
       console.log(error);
 
       
