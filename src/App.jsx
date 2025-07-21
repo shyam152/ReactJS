@@ -10,6 +10,7 @@ import PokemonApi from './component/data/PokemonApi'
 import UseRef from './component/UseRef/UseRef'
 import { DataProvider } from './component/ContextAPi/Store'
 import UseContext from './component/ContextAPi/UseContext'
+import UseMemo from './component/UseMemo/UseMemo'
 const App = () => {
     //Javascript code can be added here if needed
     // For example, you can define styles or state variables  
@@ -41,9 +42,11 @@ const App = () => {
             {/* <PokemonApi/> */}
             {/* <UseRef/> */}
 
-            <DataProvider>
+            {/* <DataProvider>
                 <UseContext/>
-            </DataProvider>
+            </DataProvider> */}
+
+            <UseMemo/>
         </div>
     )
 }
