@@ -27,13 +27,13 @@ const UseMemo = () => {
         <button onClick={() => setCount(count + 1)}>Increment</button>
 
         <MemoCount/>
-        {/* <h1>UseMemo Component</h1>
+        <h1>UseMemo Component</h1>
         <p>This component demonstrates the use of useMemo to optimize performance by memoizing expensive calculations.</p>
         <p>Check the console to see the sum calculation only happens once.</p>
         <p>Subsequent renders will not recalculate the sum, improving performance.</p>
         <p>Use this component to understand how useMemo can help in avoiding unnecessary calculations.</p>
         <p>Remember to import useMemo from React when implementing this in your own components.</p>
-        <p>UseMemo is particularly useful in scenarios where expensive calculations are involved.</p>    */}
+        <p>UseMemo is particularly useful in scenarios where expensive calculations are involved.</p>   
     </div>
   )
 }
