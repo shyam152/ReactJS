@@ -12,6 +12,7 @@ import { DataProvider } from './component/ContextAPi/Store'
 import UseContext from './component/ContextAPi/UseContext'
 import UseMemo from './component/UseMemo/UseMemo'
 import UseReducer from './component/UseReducer/UseReducer'
+import UseCallback from './component/UseCallBack/UseCallback'
 const App = () => {
     //Javascript code can be added here if needed
     // For example, you can define styles or state variables  
@@ -48,7 +49,8 @@ const App = () => {
             </DataProvider> */}
 
             {/* <UseMemo/> */}
-            <UseReducer />
+            {/* <UseReducer /> */}
+            <UseCallback/>
         </div>
     )
 }
