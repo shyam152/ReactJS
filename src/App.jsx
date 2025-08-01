@@ -13,6 +13,10 @@ import UseContext from './component/ContextAPi/UseContext'
 import UseMemo from './component/UseMemo/UseMemo'
 import UseReducer from './component/UseReducer/UseReducer'
 import UseCallback from './component/UseCallBack/UseCallback'
+import { createBrowserRouter } from 'react-router'
+import { RouterProvider } from 'react-router-dom'
+import Home from './routercomp/Layout/Home'
+import About from './routercomp/Layout/About'
 const App = () => {
     //Javascript code can be added here if needed
     // For example, you can define styles or state variables  
@@ -22,7 +26,20 @@ const App = () => {
     //     setCount(count+1)
     // }
 
+    const router = createBrowserRouter([
+       {
+        path:"/",
+        element: <Home/>
+       },
+       {
+        path:"/about",
+        element: <About/>
+       }
+    ])
+
     return (
+        <RouterProvider router={router} />
+    )
         //html + JSX code
         // You can use the Card component here
         // <div className='h-screen w-full'>
@@ -33,26 +50,26 @@ const App = () => {
         //         }
         //     </ul>
         // </div>
-        <div className='h-screen flex items-center justify-center'>
-            {/* <h1>{count}</h1> */}
-            {/* <button onClick={handleclick}>Increment</button> */}
+        // <div className='h-screen flex items-center justify-center'>
+            // {/* <h1>{count}</h1> */}
+            // {/* <button onClick={handleclick}>Increment</button> */}
 
-            {/* <Register /> */}
-            {/* <RegisterEff/> */}
-            {/* <UseEffect/> */}
-            {/* <Jokes/> */}
-            {/* <PokemonApi/> */}
-            {/* <UseRef/> */}
+            // {/* <Register /> */}
+            // {/* <RegisterEff/> */}
+            // {/* <UseEffect/> */}
+            // {/* <Jokes/> */}
+            // {/* <PokemonApi/> */}
+            // {/* <UseRef/> */}
 
-            {/* <DataProvider>
-                <UseContext/>
-            </DataProvider> */}
+            // {/* <DataProvider>
+            //     <UseContext/>
+            // </DataProvider> */}
 
-            {/* <UseMemo/> */}
-            {/* <UseReducer /> */}
-            <UseCallback/>
-        </div>
-    )
+            // {/* <UseMemo/> */}
+            // {/* <UseReducer /> */}
+            // {/* <UseCallback/> */}
+        // </div>
+
 }
 
 export default App
