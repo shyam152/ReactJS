@@ -32,6 +32,7 @@ const Card = ({details}) => {
 =======
       <button>Watch Now</button>
 >>>>>>> Stashed changes
+
     </div>
   )
 }
